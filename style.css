@@ -2,6 +2,19 @@ body {
 	background: #fff;
 }
 
+#heading {
+	text-align: center;
+	padding-top: 50px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#shopping {
+	color: #ca3f2c;
+	/* font-weight: bold; */
+}
+
 .cart {
 	margin: 100px 0;
 	background-color: #F6F5FA;
@@ -73,3 +86,50 @@ body {
 	background-color: #2FBE70;
 	border: none;
 }
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: #2e4466;
+	color: white;
+}
+
+/* 
+.footer-content {
+	margin-bottom: 1rem;
+}
+
+.contact-list {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-list li {
+	margin-bottom: 0.5rem;
+}
+
+.contact-list li a {
+	color: white;
+	text-decoration: none;
+}
+
+.contact-list li a:hover {
+	text-decoration: underline;
+} */
+
+/* Copyright section */
+
+/* .footer-content p,
+.copyright p {
+	margin: 0;
+} */
+
+/* Styling for larger screens */
+
+/* @media (min-width: 768px) {
+	.footer-content {
+		display: flex;
+		justify-content: center;
+
+	}
+} */
