@@ -22,13 +22,29 @@ function getTotalAmountId(amountId) {
     return subTotal;
 }
 
+function taxElementById(amountId, value) {
+    const taxAmount = document.getElementById(amountId);
+    taxAmount.innerText = value;
+
+    // const subTotalElement = document.getElementById('sub-total');
+    // subTotalElement.innerText = newTotalAmount;
+}
+
 function calculationTotal() {
     //calculation total amount
     const totalMobileAmount = getTotalAmountId('mobile-amount')
     const totalCaseAmount = getTotalAmountId('case-amount')
 
     const newTotalAmount = totalMobileAmount + totalCaseAmount;
+    taxElementById('sub-total', newTotalAmount);
     const subTotalElement = document.getElementById('sub-total');
     subTotalElement.innerText = newTotalAmount;
 
+    //calculate Tax
+    const taxAmount = newTotalAmount * 0.1; //10% tax
+    taxElementById('tax', taxAmount);
+
+    const finalAmount = newTotalAmount + taxAmount;
+    taxElementById('final-total', finalAmount);
 }
+
